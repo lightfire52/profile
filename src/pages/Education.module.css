@@ -1,0 +1,77 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.bannerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 60%;
+  display: block;
+}
+
+.bannerCaption {
+  position: absolute;
+  bottom: var(--space-sm);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(250, 248, 245, 0.92);
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+}
+
+.content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+}
+
+.lede {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  max-width: 60ch;
+  margin-bottom: var(--space-lg);
+}
+
+.detail {
+  border-top: 1px solid var(--color-divider);
+  padding-top: var(--space-md);
+}
+
+.detail + .detail {
+  margin-top: var(--space-lg);
+}
+
+.meta {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: var(--space-sm);
+}
+
+.list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.list li {
+  margin-bottom: 0.4rem;
+}
+
+.list li:last-child {
+  margin-bottom: 0;
+}
