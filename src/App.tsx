@@ -7,7 +7,7 @@ import Career from './pages/Career';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/profile/">
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
